@@ -11,25 +11,6 @@ export default function Home() {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Monoton&family=VT323&display=swap"
-					rel="stylesheet"
-				/>
-
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-					rel="stylesheet"
-				/>
-				<link
-					rel="stylesheet"
-					href="/node_modules/react-grid-layout/css/styles.css"
-				/>
-				<link
-					rel="stylesheet"
-					href="/node_modules/react-resizable/css/styles.css"
-				/>
 			</Head>
 			<Splash />
 		</>

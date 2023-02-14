@@ -3,12 +3,18 @@ import mobile from "../assets/mobile.png";
 import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
+import me1 from "../assets/me/me1.jpeg";
+import me2 from "../assets/me/me2.jpeg";
+import me3 from "../assets/me/me3.jpeg";
+import me4 from "../assets/me/me4.png";
 import figma from "../assets/figma.png";
 import flutter from "../assets/flutter.png";
 import git from "../assets/git.png";
 import thisPc from "../assets/thisPc.png";
 import folder from "../assets/folder.png";
 import graphql from "../assets/graphql.png";
+import tailwind from "../assets/tailwind.png";
+import loading from "../assets/loading.gif";
 import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
 import mu5 from "../assets/mu5.png";
@@ -42,8 +48,33 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import wallpaper from "../assets/wallpaper.jpg";
+import json from "../assets/json-file.png";
+import ex from "../assets/express.png";
+import storybook from "../assets/storybook-icon.png.svg";
+import prisma from "../assets/prisma.png";
+import postgre from "src/assets/Postgresql_elephant.svg.png";
+import bash from "src/assets/gnu-bash.png";
+import hub from "src/assets/github.png";
+import front from "../assets/front.jpeg";
+import back from "../assets/backend.jpeg";
+import docker from "../assets/docker-plain-wordmark.svg";
 
 export default {
+	docker,
+	front,
+	back,
+	hub,
+	bash,
+	postgre,
+	prisma,
+	storybook,
+	ex,
+	json,
+	tailwind,
+	me1,
+	me2,
+	me3,
+	me4,
 	trash,
 	start,
 	thisPc,
@@ -84,6 +115,7 @@ export default {
 	asus,
 	bolt,
 	nb,
+	loading,
 	skype,
 	spotify,
 };

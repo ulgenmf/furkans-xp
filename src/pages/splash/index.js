@@ -109,10 +109,9 @@ function Splash() {
 				<div
 					className={` ${isVisible} self-center flex items-center flex-col name absolute bottom-[30%] text-center`}
 				>
-					<Name />{" "}
 					<Link href={"../start"}>
 						<p className="self-center text-black w-52 rounded-3xl py-3 hover:bg-lime-300 hover:scale-105 duration-200  bg-yellow-50 text-center place-self-center text-2xl font-semibold">
-							PROCEED
+							press enter
 						</p>
 					</Link>
 				</div>

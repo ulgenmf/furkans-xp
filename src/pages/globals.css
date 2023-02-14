@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
+body {
+	overflow: hidden;
+}
 :root {
 	--font-base: "DM Sans", sans-serif;
 
@@ -15,12 +17,18 @@
 	--brown-color: #46364a;
 	--white-color: #ffffff;
 }
+
+.__bar {
+	height: 8vh;
+	background-color: green;
+}
 .desktop {
-	background-image: url("https://images2.alphacoders.com/941/thumb-1920-941898.jpg");
+	background-image: url("https://r4.wallpaperflare.com/wallpaper/135/692/935/astronaut-space-black-background-artwork-hd-wallpaper-7866ed583040dc28909c514e8812149a.jpg");
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
-	width: 100vw;
+	background-repeat: no-repeat;
+
+	height: calc(100%-8vh);
 }
 .body__img {
 	@media screen and (max-width: 800px) {
