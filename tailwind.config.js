@@ -11,6 +11,7 @@ module.exports = {
 
 				Motonotn: ["Monoton", " cursive"],
 				bit: ["Press Start 2P", "cursive"],
+				jet: ["JetBrains Mono"],
 			},
 			screens: {
 				mobile: "300px",

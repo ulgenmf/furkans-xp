@@ -1,35 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FiArrowDown } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { MyContext } from "../_app";
 import images from "../../constants/images";
 // import { MyName } from "../../components/Name/MyName";
 import Name from "../../components/Name/Name";
 import { RiAwardFill } from "react-icons/ri";
 import TypeIt from "typeit-react";
 import { useState, useEffect } from "react";
+import { Router, useRouter } from "next/router";
 function Splash() {
 	const [isVisible, setIsvisible] = useState("hidden");
-	const [placeHolder, setPlaceHolder] = useState("");
-	function handleSubmit() {}
+	const [userName, setUserName] = useContext(MyContext);
+	console.log(userName, "username");
 	const Layer1 = images.Layer1;
-	const myArray = [
-		images.flutter,
-		images.redux,
-		images.sass,
-		images.flutter,
-		images.redux,
-		images.sass,
-		images.flutter,
-		images.redux,
-		images.sass,
-		images.flutter,
-		images.redux,
-		images.sass,
-		images.flutter,
-		images.redux,
-		images.sass,
-	];
+
+	const router = useRouter();
 
 	const scaleVariants = {
 		whileInView: {
@@ -56,7 +44,6 @@ function Splash() {
 	}, []);
 
 	const command = "Please write your input here";
-	function placeHolderHandle() {}
 
 	return (
 		<>
@@ -64,7 +51,6 @@ function Splash() {
 				<p className="p-2">
 					I see you are on a mobile device, sorry to inform you responsive
 					configuration hasnt been completed yet, please try with bigger screen
-					later.
 				</p>
 			</div>
 			<div className="body__body flex  text-white flex-col  bg-black h-screen">
@@ -107,13 +93,25 @@ function Splash() {
 					</TypeIt>
 				</div>
 				<div
-					className={` ${isVisible} self-center flex items-center flex-col name absolute bottom-[30%] text-center`}
+					className={` ${isVisible} self-center flex items-center flex-col name absolute bottom-[25%] text-center`}
 				>
-					<Link href={"../start"}>
-						<p className="self-center text-black w-52 rounded-3xl py-3 hover:bg-lime-300 hover:scale-105 duration-200  bg-yellow-50 text-center place-self-center text-2xl font-semibold">
-							press enter
-						</p>
-					</Link>
+					<form className="ml-3 mt-7 text-3xl font-V3  flex flex-col  text-yellow-500">
+						<p>Please enter your name ; </p>
+						<input
+							className="bg-black outline-none  placeholder-inherit border-b-2 pb-2 border-white  text-white font-V3 text-3xl"
+							type="text"
+							placeholder="..."
+							name=""
+							onChange={(e) => setUserName(e.target.value)}
+							id=""
+						/>{" "}
+						<Link
+							href={"../start"}
+							className=" rounded-full text-3xl text-purple-500 py-2 hover:bg-green-500 duration-200  hover:scale-105 hover:text-yellow-400 shadow-lg shadow-purple-500 bg-gray-100 mt-6"
+						>
+							Proceed
+						</Link>
+					</form>
 				</div>
 
 				<p className="absolute   bottom-2 left-2 font-V3 text-lg">

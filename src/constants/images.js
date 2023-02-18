@@ -58,8 +58,30 @@ import hub from "src/assets/github.png";
 import front from "../assets/front.jpeg";
 import back from "../assets/backend.jpeg";
 import docker from "../assets/docker-plain-wordmark.svg";
+import worklibrary from "src/assets/work/work-library.png";
+import workai from "src/assets/work/work-ai.png";
+import workport from "src/assets/work/work4.png";
+import workweather from "src/assets/work/work-4.png";
+import worktimer from "src/assets/work/work-3.png";
+import kedi from "src/assets/cat-png-40367.png";
+import wp from "src/assets/wallpaper/wallpaperflare.com_wallpaper.jpg";
+import wp1 from "src/assets/wallpaper/astronaut.jpg";
+import wp2 from "src/assets/wallpaper/retro.jpg";
+import wp3 from "src/assets/wallpaper/Sky-at-night.jpg";
+import wp4 from "src/assets/wallpaper/solar eclipse.jpg";
 
 export default {
+	wp,
+	wp1,
+	wp2,
+	wp3,
+	wp4,
+	kedi,
+	workai,
+	workport,
+	worktimer,
+	workweather,
+	worklibrary,
 	docker,
 	front,
 	back,

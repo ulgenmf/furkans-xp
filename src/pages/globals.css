@@ -1,14 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 body {
 	overflow: hidden;
 }
 :root {
 	--font-base: "DM Sans", sans-serif;
-
 	--primary-color: #edf2f8;
 	--secondary-color: #313bac;
 	--black-color: #030303;
@@ -17,18 +14,46 @@ body {
 	--brown-color: #46364a;
 	--white-color: #ffffff;
 }
+a:active,
+a:focus,
+li:focus,
+li:active {
+	outline: none !important;
+	border: none !important;
+	text-decoration: none !important;
+	box-shadow: none !important;
+	-webkit-tap-highlight-color: transparent !important;
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	user-select: none;
+}
+
+.kedi {
+	background-image: url("https://www.pngkey.com/png/detail/160-1608476_cat-pointing-up-cat-pointing-at-something.png");
+	height: 40px;
+	width: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .__bar {
 	height: 8vh;
-	background-color: green;
 }
 .desktop {
-	background-image: url("https://r4.wallpaperflare.com/wallpaper/135/692/935/astronaut-space-black-background-artwork-hd-wallpaper-7866ed583040dc28909c514e8812149a.jpg");
-	background-position: center;
+	/* background-image: url("https://r4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-b896bd6800903c48d09c01fed852c41a.jpg"); */
+	/* background-image: url("../assets/about04.png"); */
+	/* background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
-
-	height: calc(100%-8vh);
+	background-repeat: no-repeat; */
+	height: 900px;
+	width: 1440;
+}
+a {
+	text-decoration: none;
+	text-decoration-color: #030303;
+	outline: #71727e;
 }
 .body__img {
 	@media screen and (max-width: 800px) {
